@@ -15,7 +15,8 @@ export function Pepperoni(props) {
     if (props.inView){
       gsap.to(refModel.current.scale, {x: 1, y: 1, z: 1, duration: 3})
     }else{
-      gsap.to(refModel.current.scale, {x: 0.1, y: 0.1, z: 0.1, duration: 3})
+      gsap.to(refModel.current.scale, {x: 0.7, y: 0.7, z: 0.7, duration: 3})
+
     }
   }, [props.inView]);
   return (

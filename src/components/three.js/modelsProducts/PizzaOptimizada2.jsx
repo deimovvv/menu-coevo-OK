@@ -15,7 +15,7 @@ export function ModelPizza1(props) {
     if (props.inView){
       gsap.to(refModel.current.scale, {x: 1, y: 1, z: 1, duration: 3})
     }else{
-      gsap.to(refModel.current.scale, {x: 0.1, y: 0.1, z: 0.1, duration: 3})
+      gsap.to(refModel.current.scale, {x: 0.5, y: 0.5, z: 0.5, duration: 3})
     }
   }, [props.inView]);
   return (
