@@ -64,7 +64,7 @@ import { useInView } from "react-intersection-observer";
   
         <Suspense fallback={null }>
          
-          <SceneSelector category={category} name={name} inView={inView}/>
+          <SceneSelector category={category} name={name}/*  inView={inView} *//>
         </Suspense>
              
   
