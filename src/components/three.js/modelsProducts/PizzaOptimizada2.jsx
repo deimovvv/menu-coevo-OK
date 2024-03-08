@@ -10,16 +10,16 @@ import gsap from 'gsap';
 
 export function ModelPizza1(props) {
   const { nodes, materials } = useGLTF('/models/PizzaOptimizada2-transformed.glb')
-  const refModel = useRef();
+ /*  const refModel = useRef();
   useEffect(() => {
     if (props.inView){
       gsap.to(refModel.current.scale, {x: 1, y: 1, z: 1, duration: 2})
     }else{
       gsap.to(refModel.current.scale, {x: 0.5, y: 0.5, z: 0.5, duration: 2})
     }
-  }, [props.inView]);
+  }, [props.inView]); */
   return (
-    <group {...props} dispose={null} scale={[0.1,0.1,0.1]} ref={refModel}>
+    <group {...props} dispose={null} /* scale={[0.1,0.1,0.1]} *//*  ref={refModel} */>
       <mesh geometry={nodes.pizza.geometry} material={materials.pizza} scale={0.022} />
     </group>
   )

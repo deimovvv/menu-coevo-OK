@@ -10,7 +10,7 @@ import gsap from 'gsap';
 
 export function CuatroQuesos(props) {
   const { nodes, materials } = useGLTF('/models/cuatroQuesos-transformed.glb')
-  const refModel = useRef();
+  /* const refModel = useRef();
   useEffect(() => {
     if (props.inView){
       gsap.to(refModel.current.scale, {x: 1, y: 1, z: 1, duration: 2})
@@ -18,9 +18,9 @@ export function CuatroQuesos(props) {
       gsap.to(refModel.current.scale, {x: 0.7, y: 0.7, z: 0.7, duration: 2})
 
     }
-  }, [props.inView]);
+  }, [props.inView]); */
   return (
-    <group {...props} dispose={null} scale={[0.1,0.1,0.1]} ref={refModel}>
+    <group {...props} dispose={null} /* scale={[0.1,0.1,0.1]} */ /* ref={refModel} */>
       <mesh geometry={nodes.Mesh_0001.geometry} material={materials['Material_0.001']}  scale={3.5} position={[0,-0.4,0]} />
     </group>
   )

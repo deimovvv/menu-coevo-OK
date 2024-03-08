@@ -58,13 +58,13 @@ import { useInView } from "react-intersection-observer";
           autoRotate={true}
          /*  minDistance={1}
           maxDistance={2} */
-          enableTouchScroll={true}
+          /* enableTouchScroll={true} */
         
         />
   
         <Suspense fallback={null }>
          
-          <SceneSelector category={category} name={name}/*  inView={inView} *//>
+          <SceneSelector category={category} name={name} inView={inView}/>
         </Suspense>
              
   
