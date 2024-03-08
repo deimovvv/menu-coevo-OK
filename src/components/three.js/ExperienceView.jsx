@@ -56,8 +56,8 @@ import { useInView } from "react-intersection-observer";
           maxPolarAngle={1.0}
          enableZoom={false} 
           autoRotate={true}
-          minDistance={1}
-          maxDistance={2}
+         /*  minDistance={1}
+          maxDistance={2} */
           enableTouchScroll={true}
         
         />
